@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contacto</title>
   <link rel="stylesheet" href="/css/styles.css" />
   <script defer src="/js/main.js"></script>
@@ -18,10 +19,15 @@
   </nav>
 </header>
 
-<main class="container">
+<section class="page-banner" style="background-image:url('/img/banner-frases.jpg')">
   <h1>Contacto</h1>
+</section>
 
+<main class="container">
   <div class="card">
+    <h2>Envíanos un mensaje</h2>
+    <p class="muted">Este formulario envía datos al servidor (Python).</p>
+
     <form id="contactForm" method="POST" action="/enviar_contacto">
       <label>Nombre</label>
       <input name="nombre" id="nombre" placeholder="Tu nombre" required>
@@ -33,10 +39,16 @@
       <textarea name="mensaje" id="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
 
       <p id="formError" class="error" style="display:none;"></p>
-
       <button class="btn" type="submit">Enviar</button>
     </form>
   </div>
 </main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="muted">Contacto — Inspiración</span>
+    <span class="muted"></span>
+  </div>
+</footer>
 </body>
 </html>
