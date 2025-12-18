@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Inspiración</div>
+  <nav class="nav">
+    <a href="/">Inicio</a>
+    <a href="/mensajes">Mensajes</a>
+    <a href="/frases">Frases</a>
+    <a href="/favoritos">Favoritos</a>
+    <a class="active" href="/contacto">Contacto</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Contacto</h1>
+
+  <div class="card">
+    <form id="contactForm" method="POST" action="/enviar_contacto">
+      <label>Nombre</label>
+      <input name="nombre" id="nombre" placeholder="Tu nombre" required>
+
+      <label>Correo</label>
+      <input name="correo" id="correo" placeholder="tu@email.com" required>
+
+      <label>Mensaje</label>
+      <textarea name="mensaje" id="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+      <p id="formError" class="error" style="display:none;"></p>
+
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+  </div>
+</main>
+</body>
+</html>
