@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inspiración Diaria</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Inspiración</div>
+  <nav class="nav">
+    <a class="active" href="/">Inicio</a>
+    <a href="/mensajes">Mensajes</a>
+    <a href="/frases">Frases</a>
+    <a href="/favoritos">Favoritos</a>
+    <a href="/contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Un mensaje puede cambiar tu día</h1>
+    <p>Detente un momento. Respira. Lee algo que te levante.</p>
+    <div class="hero-actions">
+      <button class="btn" id="motivarBtn" type="button">Motívame ahora</button>
+      <a class="btn ghost" href="/frases">Ver frases</a>
+    </div>
+
+    <div class="hero-box">
+      <p class="hero-label">Frase del momento</p>
+      <p id="heroFrase" class="hero-frase">Haz click en “Motívame ahora”.</p>
+      <div class="hero-mini-actions">
+        <button class="btn small" id="favHeroBtn" type="button" disabled>Guardar en favoritos</button>
+        <span id="heroInfo" class="muted"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+  <h2>Elige tu sección</h2>
+
+  <div class="cards">
+    <a class="card linkcard" href="/mensajes">
+      <img src="/img/card1.jpg" alt="Mensajes" />
+      <h3>Mensajes</h3>
+      <p>Reflexiones un poco más largas para fortalecer tu mente y tu ánimo.</p>
+    </a>
+
+    <a class="card linkcard" href="/frases">
+      <img src="/img/card2.jpg" alt="Frases" />
+      <h3>Frases</h3>
+      <p>Frases cortas y directas. Perfectas para retomar fuerzas rápido.</p>
+    </a>
+
+    <a class="card linkcard" href="/favoritos">
+      <img src="/img/card3.jpg" alt="Favoritos" />
+      <h3>Favoritos</h3>
+      <p>Guarda lo que te marcó y vuelve cuando lo necesites.</p>
+    </a>
+  </div>
+
+  <div class="split">
+    <div class="card">
+      <h3>¿Cómo funciona?</h3>
+      <ul class="list">
+        <li>Presiona <b>Motívame</b> para recibir una frase aleatoria.</li>
+        <li>Guarda tus frases en <b>Favoritos</b>.</li>
+        <li>En <b>Contacto</b> puedes enviar un mensaje al servidor.</li>
+      </ul>
+      <p class="muted">Diseño minimalista + interactividad con JavaScript + backend en Python.</p>
+    </div>
+
+    <div class="card">
+      <h3>Acceso Admin</h3>
+      <p class="muted">Página protegida con contraseña simple para ver mensajes recibidos.</p>
+      <a class="btn" href="/login">Ir a login</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="muted">© 2025 Inspiración — Proyecto Web </span>
+    <span class="muted"></span>
+  </div>
+</footer>
+</body>
+</html>
