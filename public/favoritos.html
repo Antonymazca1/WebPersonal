@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Favoritos</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Inspiración</div>
+  <nav class="nav">
+    <a href="/">Inicio</a>
+    <a href="/mensajes">Mensajes</a>
+    <a href="/frases">Frases</a>
+    <a class="active" href="/favoritos">Favoritos</a>
+    <a href="/contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="page-banner" style="background-image:url('/img/banner-favoritos.jpg')">
+  <h1>Tus favoritos</h1>
+</section>
+
+<main class="container">
+  <div class="split">
+    <div class="card">
+      <h2>Guardados</h2>
+      <p class="muted">Estos favoritos se guardan en tu navegador (LocalStorage).</p>
+      <div class="row-actions">
+        <button class="btn ghost" id="limpiarFavBtn" type="button">Vaciar favoritos</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Tip</h2>
+      <p class="muted">Puedes guardar desde: Inicio, Mensajes y Frases.</p>
+      <a class="btn" href="/frases">Ir a frases</a>
+    </div>
+  </div>
+
+  <div id="favoritosList" class="grid" style="margin-top:16px;"></div>
+  <p id="favEmpty" class="muted" style="display:none; margin-top:16px;">Aún no tienes favoritos guardados.</p>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="muted">Favoritos — Inspiración</span>
+    <span class="muted"></span>
+  </div>
+</footer>
+</body>
+</html>
