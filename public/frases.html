@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Frases</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Inspiración</div>
+  <nav class="nav">
+    <a href="/">Inicio</a>
+    <a href="/mensajes">Mensajes</a>
+    <a class="active" href="/frases">Frases</a>
+    <a href="/favoritos">Favoritos</a>
+    <a href="/contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="page-banner" style="background-image:url('/img/banner-frases.jpg')">
+  <h1>Frases cortas</h1>
+</section>
+
+<main class="container">
+  <div class="card">
+    <h2>Generador de frases</h2>
+    <p class="muted">Presiona el botón y guarda lo que te sirva.</p>
+
+    <div class="quote-box">
+      <p id="fraseActual" class="quote">Presiona “Generar” para comenzar.</p>
+      <div class="quote-actions">
+        <button class="btn" id="generarFraseBtn" type="button">Generar</button>
+        <button class="btn ghost" id="guardarFraseBtn" type="button" disabled>Guardar</button>
+      </div>
+      <span id="fraseInfo" class="muted"></span>
+    </div>
+  </div>
+
+  <h2>Algunas frases</h2>
+  <div class="grid">
+    <div class="card">
+      <p class="quote smallq">Hoy cuenta.</p>
+      <button class="btn small" data-fav="Hoy cuenta.">Guardar</button>
+    </div>
+    <div class="card">
+      <p class="quote smallq">Un paso a la vez.</p>
+      <button class="btn small" data-fav="Un paso a la vez.">Guardar</button>
+    </div>
+    <div class="card">
+      <p class="quote smallq">La disciplina te salva.</p>
+      <button class="btn small" data-fav="La disciplina te salva.">Guardar</button>
+    </div>
+    <div class="card">
+      <p class="quote smallq">Respira. Vuelve. Intenta.</p>
+      <button class="btn small" data-fav="Respira. Vuelve. Intenta.">Guardar</button>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="muted">Frases — Inspiración</span>
+    <span class="muted"></span>
+  </div>
+</footer>
+</body>
+</html>
